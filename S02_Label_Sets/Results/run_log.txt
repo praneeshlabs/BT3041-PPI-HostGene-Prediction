@@ -1,0 +1,5 @@
+### 2026-11-25 15:57:31  00_build_labels.py 
+gordon: 332 listed, 332 map to official symbols
+per-screen genes (human): {'Daniloski': 77, 'Baggen': 52, 'Schneider': 50, 'Wang': 49, 'Heaton': 46, 'Zhu Sdel': 30}
+crispr: 269 unique genes in 6 human screens; >=2 screens: 30
+Gordon & CRISPR overlap: 16 -> ['AGPS', 'ATP6AP1', 'ATP6V1A', 'CEP350', 'CSNK2B', 'ERMP1', 'HS2ST1', 'MRPS27', 'NPC2', 'PCSK6', 'PMPCA', 'RAB7A', 'RALA', 'SCAP', 'TOR1AIP1', 'WASHC4']

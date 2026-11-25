@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+# re-created when the steps run
+Data/processed/
+# large downloads: S01_Data_Download fetches them, STRING versions are downloaded by hand (see README)
+Data/raw/*.gz
+Data/raw/HuRI.tsv
+Data/raw/string_versions/

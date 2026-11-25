@@ -1,0 +1,10 @@
+scheme,labels,n_groups,frac_pos_sharing_group_with_another_pos,largest_group
+community_coarse,gordon,22,0.9933333333333333,2115
+community_coarse,crispr,22,1.0,2115
+community_coarse,crispr_min2,22,1.0,2115
+community_fine,gordon,248,0.9133333333333333,285
+community_fine,crispr,248,0.8159203980099502,285
+community_fine,crispr_min2,248,0.7777777777777778,285
+complex_group,gordon,7075,0.43,274
+complex_group,crispr,7075,0.4079601990049751,274
+complex_group,crispr_min2,7075,0.4444444444444444,274

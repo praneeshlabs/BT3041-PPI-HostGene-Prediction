@@ -1,0 +1,113 @@
+  labels 'gordon': 332 listed, 332 mapped to official symbols
+  labels 'crispr': 269 listed, 269 mapped to official symbols
+  labels 'crispr_min2': 30 listed, 30 mapped to official symbols
+Leiden resolution -> (n communities, median size): {1: (22, 336), 2: (35, 308), 5: (72, 129), 10: (248, 10), 20: (627, 3)}
+coarse res=1: 22 communities; fine res=10: 248 communities
+          scheme      labels  n_groups  frac_pos_sharing_group_with_another_pos  largest_group
+community_coarse      gordon        22                                    0.993           2115
+community_coarse      crispr        22                                    1.000           2115
+community_coarse crispr_min2        22                                    1.000           2115
+  community_fine      gordon       248                                    0.913            285
+  community_fine      crispr       248                                    0.816            285
+  community_fine crispr_min2       248                                    0.778            285
+   complex_group      gordon      7075                                    0.430            274
+   complex_group      crispr      7075                                    0.408            274
+   complex_group crispr_min2      7075                                    0.444            274
+
+Communities enriched for positives (q<0.05):
+     labels  community  size  positives  expected   fold      p   q_BH
+     crispr          7   403         22    7.5548 2.9120 0.0000 0.0001
+crispr_min2          0   946         10    2.3822 4.1978 0.0001 0.0013
+     crispr          0   946         33   17.7342 1.8608 0.0003 0.0038
+     gordon         11   801         39   22.4119 1.7401 0.0005 0.0102
+crispr_min2          4   532          6    1.3397 4.4787 0.0018 0.0193
+     gordon          5   339         19    9.4852 2.0031 0.0032 0.0284
+     gordon          3  1597         62   44.6838 1.3875 0.0039 0.0284
+
+Degree-matched LCC test:
+      labels  n_pos  lcc_obs  null_mean  null_sd      z  p_emp
+     gordon    300      121    135.784   16.558 -0.893  0.850
+     crispr    201       69     43.550   16.329  1.559  0.059
+crispr_min2     27       12      3.117    1.155  7.689  0.001
+
+PCA explained variance: [0.377 0.228 0.104 0.086 0.066 0.048]
+                  PC1   PC2   PC3
+lfc              0.03  0.47  0.19
+abs_lfc          0.08  0.56  0.10
+nlp              0.11  0.51  0.05
+logbm            0.20 -0.03 -0.31
+log_degree       0.46 -0.13  0.12
+log_betweenness  0.35 -0.10 -0.25
+closeness        0.43 -0.10  0.05
+pagerank         0.40 -0.02 -0.27
+coreness         0.39 -0.13  0.24
+clustering       0.17 -0.09  0.77
+prop             0.29  0.38 -0.23
+AUROC of each PC for Gordon: {'PC1': 0.592, 'PC2': 0.404, 'PC3': 0.463, 'PC4': 0.6, 'PC5': 0.476, 'PC6': 0.494}
+
+k-means on PC1-5, silhouette-chosen k=3 (sil: {2: np.float64(0.319), 3: np.float64(0.329), 4: np.float64(0.241), 5: np.float64(0.224), 6: np.float64(0.232), 7: np.float64(0.247), 8: np.float64(0.224)})
+            n  gordon_rate  crispr_rate  DE_rate  median_log_pubs  median_logbm  median_log_degree  fold_gordon  p_gordon  q_BH
+cluster                                                                                                                        
+0        4151        0.037        0.021    0.106            4.615         6.573              4.382        1.335      0.00   0.0
+1        6308        0.023        0.017    0.110            3.638         5.692              1.946        0.805      1.00   1.0
+2         263        0.011        0.015    0.996            4.990         6.628              3.497        0.408      0.98   1.0
+  saved figure 10_feature_space_umap.png
+  saved figure 11_pca_feature_space.png
+  saved figure 12_community_enrichment.png
+### 2026-11-25 16:01:06  03b_groups.py --ppi string_v11
+  labels 'gordon': 332 listed, 332 mapped to official symbols
+  labels 'crispr': 269 listed, 269 mapped to official symbols
+  labels 'crispr_min2': 30 listed, 30 mapped to official symbols
+Leiden resolution -> (n communities, median size): {1: (22, 336), 2: (35, 308), 5: (72, 129), 10: (248, 10), 20: (627, 3)}
+coarse res=1: 22 communities; fine res=10: 248 communities
+          scheme      labels  n_groups  frac_pos_sharing_group_with_another_pos  largest_group
+community_coarse      gordon        22                                    0.993           2115
+community_coarse      crispr        22                                    1.000           2115
+community_coarse crispr_min2        22                                    1.000           2115
+  community_fine      gordon       248                                    0.913            285
+  community_fine      crispr       248                                    0.816            285
+  community_fine crispr_min2       248                                    0.778            285
+   complex_group      gordon      7075                                    0.430            274
+   complex_group      crispr      7075                                    0.408            274
+   complex_group crispr_min2      7075                                    0.444            274
+
+Communities enriched for positives (q<0.05):
+     labels  community  size  positives  expected   fold      p   q_BH
+     crispr          7   403         22    7.5548 2.9120 0.0000 0.0001
+crispr_min2          0   946         10    2.3822 4.1978 0.0001 0.0013
+     crispr          0   946         33   17.7342 1.8608 0.0003 0.0038
+     gordon         11   801         39   22.4119 1.7401 0.0005 0.0102
+crispr_min2          4   532          6    1.3397 4.4787 0.0018 0.0193
+     gordon          5   339         19    9.4852 2.0031 0.0032 0.0284
+     gordon          3  1597         62   44.6838 1.3875 0.0039 0.0284
+
+Degree-matched LCC test:
+      labels  n_pos  lcc_obs  null_mean  null_sd      z  p_emp
+     gordon    300      121    135.784   16.558 -0.893  0.850
+     crispr    201       69     43.550   16.329  1.559  0.059
+crispr_min2     27       12      3.117    1.155  7.689  0.001
+
+PCA explained variance: [0.377 0.228 0.104 0.086 0.066 0.048]
+                  PC1   PC2   PC3
+lfc              0.03  0.47  0.19
+abs_lfc          0.08  0.56  0.10
+nlp              0.11  0.51  0.05
+logbm            0.20 -0.03 -0.31
+log_degree       0.46 -0.13  0.12
+log_betweenness  0.35 -0.10 -0.25
+closeness        0.43 -0.10  0.05
+pagerank         0.40 -0.02 -0.27
+coreness         0.39 -0.13  0.24
+clustering       0.17 -0.09  0.77
+prop             0.29  0.38 -0.23
+AUROC of each PC for Gordon: {'PC1': 0.592, 'PC2': 0.404, 'PC3': 0.463, 'PC4': 0.6, 'PC5': 0.476, 'PC6': 0.494}
+
+k-means on PC1-5, silhouette-chosen k=3 (sil: {2: np.float64(0.319), 3: np.float64(0.329), 4: np.float64(0.241), 5: np.float64(0.224), 6: np.float64(0.232), 7: np.float64(0.247), 8: np.float64(0.224)})
+            n  gordon_rate  crispr_rate  DE_rate  median_log_pubs  median_logbm  median_log_degree  fold_gordon  p_gordon  q_BH
+cluster                                                                                                                        
+0        4151        0.037        0.021    0.106            4.615         6.573              4.382        1.335      0.00   0.0
+1        6308        0.023        0.017    0.110            3.638         5.692              1.946        0.805      1.00   1.0
+2         263        0.011        0.015    0.996            4.990         6.628              3.497        0.408      0.98   1.0
+  saved figure 10_feature_space_umap.png
+  saved figure 11_pca_feature_space.png
+  saved figure 12_community_enrichment.png

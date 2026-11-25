@@ -1,0 +1,76 @@
+  labels 'crispr': 269 listed, 269 mapped to official symbols
+[huri__crispr] genes=5077 positives=81 prevalence=0.0160
+  scheme gene: fitted 16 score sets in 4s
+  scheme gene: done in 44s
+  scheme complex_group: fitted 16 score sets in 13s
+  scheme complex_group: done in 53s
+  scheme community_fine: fitted 16 score sets in 6s
+  scheme community_fine: done in 47s
+
+AUPRC (prevalence 0.0160):
+ scheme                 community_fine  complex_group    gene
+name                                                        
+LR:E                           0.0275         0.0253  0.0238
+LR:E+N                         0.0229         0.0216  0.0223
+LR:E+N+nuis                    0.0226         0.0214  0.0217
+LR:E+N_norm                    0.0223         0.0222  0.0221
+LR:E+nuis                      0.0268         0.0234  0.0220
+LR:E_abund                     0.0223         0.0219  0.0221
+LR:E_resp                      0.0164         0.0162  0.0160
+LR:N                           0.0180         0.0176  0.0183
+LR:nuis                        0.0208         0.0203  0.0202
+base:abs_lfc                   0.0137         0.0137  0.0137
+base:log_degree                0.0175         0.0175  0.0175
+base:log_pubs_live             0.0200         0.0200  0.0200
+base:log_pubs_pre2020          0.0194         0.0194  0.0194
+base:logbm                     0.0227         0.0227  0.0227
+base:random                    0.0156         0.0165  0.0166
+gba                            0.0145         0.0148  0.0183
+
+Key comparisons (group bootstrap, LR):
+        scheme         comparison    diff   ci_lo   ci_hi   q_BH  equivalent_pm_margin
+          gene            E+N - E -0.0015 -0.0129  0.0054 0.9111                 False
+          gene  E+N+nuis - E+nuis -0.0003 -0.0104  0.0061 0.9111                  True
+          gene       E+N_norm - E -0.0017 -0.0135  0.0067 0.9111                 False
+          gene              N - E -0.0055 -0.0192  0.0029 0.7717                 False
+          gene   N - pubs_pre2020 -0.0011 -0.0156  0.0082 0.9111                 False
+          gene      N - pubs_live -0.0017 -0.0149  0.0077 0.9111                 False
+          gene         N - degree  0.0007 -0.0152  0.0108 0.9111                 False
+          gene           N - nuis -0.0019 -0.0141  0.0073 0.9111                 False
+          gene E+N - pubs_pre2020  0.0029 -0.0134  0.0129 0.9111                 False
+          gene          E - |lfc|  0.0100  0.0036  0.0238 0.0899                 False
+          gene    E_resp - random -0.0006 -0.0042  0.0021 0.9111                  True
+          gene   E_abund - E_resp  0.0061  0.0009  0.0186 0.1199                 False
+          gene        E - E_abund  0.0017 -0.0014  0.0046 0.7717                  True
+          gene            GBA - N  0.0000 -0.0042  0.0086 0.9111                  True
+          gene GBA - pubs_pre2020 -0.0011 -0.0163  0.0157 0.9111                 False
+ complex_group            E+N - E -0.0036 -0.0227  0.0026 0.5866                 False
+ complex_group  E+N+nuis - E+nuis -0.0020 -0.0161  0.0031 0.6566                 False
+ complex_group       E+N_norm - E -0.0030 -0.0222  0.0062 0.6566                 False
+ complex_group              N - E -0.0077 -0.0308  0.0005 0.2038                 False
+ complex_group   N - pubs_pre2020 -0.0018 -0.0152  0.0056 0.6732                 False
+ complex_group      N - pubs_live -0.0024 -0.0148  0.0049 0.6566                 False
+ complex_group         N - degree  0.0000 -0.0186  0.0073 0.9650                 False
+ complex_group           N - nuis -0.0028 -0.0138  0.0039 0.6566                 False
+ complex_group E+N - pubs_pre2020  0.0023 -0.0099  0.0103 0.6732                  True
+ complex_group          E - |lfc|  0.0115  0.0045  0.0328 0.0300                 False
+ complex_group    E_resp - random -0.0003 -0.0037  0.0028 0.9162                  True
+ complex_group   E_abund - E_resp  0.0057  0.0010  0.0183 0.0699                 False
+ complex_group        E - E_abund  0.0034  0.0006  0.0118 0.0699                 False
+ complex_group            GBA - N -0.0028 -0.0101  0.0020 0.5866                  True
+ complex_group GBA - pubs_pre2020 -0.0046 -0.0176  0.0003 0.2038                 False
+community_fine            E+N - E -0.0046 -0.0291  0.0025 0.5132                 False
+community_fine  E+N+nuis - E+nuis -0.0042 -0.0269  0.0034 0.6344                 False
+community_fine       E+N_norm - E -0.0051 -0.0297  0.0020 0.4624                 False
+community_fine              N - E -0.0094 -0.0354  0.0000 0.1618                 False
+community_fine   N - pubs_pre2020 -0.0013 -0.0151  0.0042 0.7631                 False
+community_fine      N - pubs_live -0.0019 -0.0156  0.0036 0.6344                 False
+community_fine         N - degree  0.0005 -0.0140  0.0062 0.9650                 False
+community_fine           N - nuis -0.0028 -0.0177  0.0029 0.5927                 False
+community_fine E+N - pubs_pre2020  0.0035 -0.0101  0.0106 0.6344                  True
+community_fine          E - |lfc|  0.0137  0.0045  0.0405 0.0300                 False
+community_fine    E_resp - random  0.0008 -0.0028  0.0044 0.7963                  True
+community_fine   E_abund - E_resp  0.0060  0.0005  0.0208 0.1499                 False
+community_fine        E - E_abund  0.0052  0.0011  0.0180 0.0450                 False
+community_fine            GBA - N -0.0035 -0.0090  0.0007 0.2797                  True
+community_fine GBA - pubs_pre2020 -0.0049 -0.0176 -0.0003 0.1499                 False

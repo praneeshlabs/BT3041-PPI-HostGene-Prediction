@@ -1,0 +1,32 @@
+string_v11: 260571 edges at combined >= 700 inside the expressed universe (pre-LCC)
+   density-matched string_v11_m: top 147731 edges, score >= 903
+string_v115: 168286 edges at combined >= 700 inside the expressed universe (pre-LCC)
+   density-matched string_v115_m: top 147731 edges, score >= 738
+string_v120: 147731 edges at combined >= 700 inside the expressed universe (pre-LCC)
+   density-matched string_v120_m: top 147731 edges, score >= 700
+edges of combined>=700 inside the expressed universe (pre-LCC): M = 260517
+  v11_experiments: top 260517 edges -> channel score >= 195 (max possible 999); zero-score edges included: 0
+  v11_database: top 260517 edges -> channel score >= 0 (max possible 999); zero-score edges included: 49794
+  v11_textmining: top 260517 edges -> channel score >= 388 (max possible 999); zero-score edges included: 0
+  v11_coexpression: top 260517 edges -> channel score >= 179 (max possible 999); zero-score edges included: 0
+  string_v11_m: 7965 genes, 147576 edges (71s)
+  string_v120_m: 10181 genes, 147675 edges (113s)
+  string_v115_m: 10084 genes, 147652 edges (115s)
+  string_v120: 10181 genes, 147675 edges (116s)
+  string_v115: 10631 genes, 168234 edges (135s)
+  v11_experiments: 11336 genes, 260514 edges (188s)
+  v11_coexpression: 8081 genes, 260476 edges (97s)
+  v11_database: 11144 genes, 260511 edges (147s)
+  v11_textmining: 11940 genes, 260517 edges (167s)
+         network  genes  edges  mean_degree
+      string_v11  10722 260518          NaN
+    string_v11_m   7965 147576    37.056121
+     string_v115  10631 168234    31.649704
+   string_v115_m  10084 147652    29.284411
+     string_v120  10181 147675    29.009920
+   string_v120_m  10181 147675    29.009920
+ v11_experiments  11336 260514    45.962244
+    v11_database  11144 260511    46.753589
+  v11_textmining  11940 260517    43.637688
+v11_coexpression   8081 260476    64.466279
+shared gene sets: versions 7533, all networks 5712

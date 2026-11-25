@@ -1,0 +1,77 @@
+  labels 'gordon': 332 listed, 332 mapped to official symbols
+  labels 'crispr': 269 listed, 269 mapped to official symbols
+
+Positive-positive edge enrichment (observed / degree-matched expected):
+         network labels           scope  n_pos  pos_pos_edges  null_mean  null_sd  fold      z  p_emp
+      string_v11 gordon shared_versions    246          446.0    307.493   20.796 1.450  6.660  0.001
+      string_v11 gordon      shared_all    259          393.0    284.197   22.239 1.383  4.893  0.001
+     string_v115 gordon shared_versions    246          308.0    209.964   17.052 1.467  5.749  0.001
+     string_v120 gordon shared_versions    246          312.0    162.455   14.445 1.921 10.352  0.001
+    string_v11_m gordon shared_versions    246          311.0    201.282   16.730 1.545  6.558  0.001
+   string_v115_m gordon shared_versions    246          279.0    180.394   15.636 1.547  6.306  0.001
+   string_v120_m gordon shared_versions    246          312.0    162.455   14.445 1.921 10.352  0.001
+ v11_experiments gordon      shared_all    259          331.0    239.280   17.879 1.383  5.130  0.001
+    v11_database gordon      shared_all    259          335.0    243.935   29.006 1.373  3.139  0.006
+  v11_textmining gordon      shared_all    259          336.0    225.343   20.970 1.491  5.277  0.001
+v11_coexpression gordon      shared_all    259          445.0    408.633   23.597 1.089  1.541  0.072
+      string_v11 crispr shared_versions    158          265.0    111.291   12.805 2.381 12.004  0.001
+      string_v11 crispr      shared_all    152          206.0     87.256   11.193 2.361 10.608  0.001
+     string_v115 crispr shared_versions    158          230.0     59.641    8.322 3.856 20.471  0.001
+     string_v120 crispr shared_versions    158          220.0     45.787    7.260 4.805 23.997  0.001
+    string_v11_m crispr shared_versions    158          186.0     59.140    8.080 3.145 15.701  0.001
+   string_v115_m crispr shared_versions    158          219.0     53.310    7.795 4.108 21.257  0.001
+   string_v120_m crispr shared_versions    158          220.0     45.787    7.260 4.805 23.997  0.001
+ v11_experiments crispr      shared_all    152          195.0     79.649    9.833 2.448 11.731  0.001
+    v11_database crispr      shared_all    152          223.0    104.328   17.363 2.137  6.835  0.001
+  v11_textmining crispr      shared_all    152          212.0     70.862   10.017 2.992 14.090  0.001
+v11_coexpression crispr      shared_all    152          133.0     60.604    8.236 2.195  8.790  0.001
+
+Leakage curve, gordon, fixed threshold >= 700, complex_group CV, shared genes (AUPRC):
+network                string_v11  string_v115  string_v120
+name                                                       
+LR:E                       0.0440       0.0440       0.0440
+LR:E+N                     0.0458       0.0472       0.0492
+LR:E+N+nuis                0.0454       0.0468       0.0482
+LR:E+nuis                  0.0431       0.0433       0.0431
+LR:N                       0.0406       0.0412       0.0403
+base:log_degree            0.0365       0.0368       0.0357
+base:log_pubs_pre2020      0.0326       0.0326       0.0326
+gba                        0.0543       0.0639       0.0718
+
+Leakage curve, gordon, density-matched, complex_group CV, shared genes (AUPRC):
+network                string_v11_m  string_v115_m  string_v120_m
+name                                                             
+LR:E                         0.0440         0.0440         0.0440
+LR:E+N                       0.0451         0.0459         0.0492
+LR:E+N+nuis                  0.0447         0.0456         0.0482
+LR:E+nuis                    0.0433         0.0432         0.0431
+LR:N                         0.0400         0.0396         0.0403
+base:log_degree              0.0381         0.0366         0.0357
+base:log_pubs_pre2020        0.0326         0.0326         0.0326
+gba                          0.0570         0.0627         0.0718
+
+Leakage curve, crispr, fixed threshold >= 700, complex_group CV, shared genes (AUPRC):
+network                string_v11  string_v115  string_v120
+name                                                       
+LR:E                       0.0256       0.0256       0.0256
+LR:E+N                     0.0234       0.0344       0.0323
+LR:E+N+nuis                0.0235       0.0336       0.0313
+LR:E+nuis                  0.0251       0.0261       0.0260
+LR:N                       0.0234       0.0311       0.0301
+base:log_degree            0.0224       0.0218       0.0207
+base:log_pubs_pre2020      0.0202       0.0202       0.0202
+gba                        0.0690       0.0748       0.0970
+
+Leakage curve, crispr, density-matched, complex_group CV, shared genes (AUPRC):
+network                string_v11_m  string_v115_m  string_v120_m
+name                                                             
+LR:E                         0.0256         0.0256         0.0256
+LR:E+N                       0.0273         0.0326         0.0323
+LR:E+N+nuis                  0.0308         0.0321         0.0313
+LR:E+nuis                    0.0272         0.0266         0.0260
+LR:N                         0.0302         0.0329         0.0301
+base:log_degree              0.0231         0.0219         0.0207
+base:log_pubs_pre2020        0.0202         0.0202         0.0202
+gba                          0.0574         0.0738         0.0970
+  saved figure 13_leakage_curve.png
+  saved figure 14_channel_panel.png

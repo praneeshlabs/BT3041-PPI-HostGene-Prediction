@@ -1,0 +1,38 @@
+  labels 'gordon': 332 listed, 332 mapped to official symbols
+observed values (113s): {'N|gene': 0.0356, 'E+N|gene': 0.0421, 'GBA|gene': 0.067, 'E|gene': 0.0411, 'gain|gene': 0.0009, 'N|complex_group': 0.0351, 'E+N|complex_group': 0.0416, 'GBA|complex_group': 0.0553, 'E|complex_group': 0.041, 'gain|complex_group': 0.0005}
+  10/200 rewirings done, 601s elapsed, last 193s each
+  20/200 rewirings done, 820s elapsed, last 211s each
+  30/200 rewirings done, 1058s elapsed, last 226s each
+  40/200 rewirings done, 1267s elapsed, last 196s each
+  50/200 rewirings done, 15952s elapsed, last 269s each
+  60/200 rewirings done, 16185s elapsed, last 216s each
+  70/200 rewirings done, 16389s elapsed, last 194s each
+  80/200 rewirings done, 16576s elapsed, last 179s each
+  90/200 rewirings done, 16970s elapsed, last 206s each
+  100/200 rewirings done, 17176s elapsed, last 194s each
+  110/200 rewirings done, 17375s elapsed, last 187s each
+  120/200 rewirings done, 17587s elapsed, last 203s each
+  130/200 rewirings done, 17990s elapsed, last 197s each
+  140/200 rewirings done, 18208s elapsed, last 210s each
+  150/200 rewirings done, 18433s elapsed, last 216s each
+  160/200 rewirings done, 18692s elapsed, last 245s each
+  170/200 rewirings done, 19085s elapsed, last 190s each
+  180/200 rewirings done, 19287s elapsed, last 193s each
+  190/200 rewirings done, 19492s elapsed, last 195s each
+  200/200 rewirings done, 19685s elapsed, last 184s each
+  labels 'gordon': 332 listed, 332 mapped to official symbols
+  labels 'gordon': 332 listed, 332 mapped to official symbols
+  labels 'gordon': 332 listed, 332 mapped to official symbols
+  labels 'gordon': 332 listed, 332 mapped to official symbols
+  labels 'gordon': 332 listed, 332 mapped to official symbols
+  labels 'gordon': 332 listed, 332 mapped to official symbols
+       ppi labels           quantity  observed  null_mean  null_sd        z   R  p_emp_one_sided  min_possible_p
+string_v11 gordon             N|gene   0.03564    0.03409  0.00088  1.76353 200          0.05970         0.00498
+string_v11 gordon           E+N|gene   0.04207    0.04163  0.00055  0.81290 200          0.16915         0.00498
+string_v11 gordon           GBA|gene   0.06697    0.03533  0.00119 26.56158 200          0.00498         0.00498
+string_v11 gordon          gain|gene   0.00093    0.00049  0.00055  0.81290 200          0.16915         0.00498
+string_v11 gordon    N|complex_group   0.03514    0.03415  0.00093  1.06102 200          0.12438         0.00498
+string_v11 gordon  E+N|complex_group   0.04158    0.04154  0.00054  0.07250 200          0.39801         0.00498
+string_v11 gordon  GBA|complex_group   0.05525    0.03529  0.00117 17.04177 200          0.00498         0.00498
+string_v11 gordon gain|complex_group   0.00054    0.00050  0.00054  0.07250 200          0.39801         0.00498
+mean fraction of edges shared between a rewired graph and the real graph: 0.0535

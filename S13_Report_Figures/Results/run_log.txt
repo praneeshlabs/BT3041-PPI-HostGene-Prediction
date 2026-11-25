@@ -1,0 +1,18 @@
+### 2026-11-25 16:37:47  10_report_figures.py 
+  saved figure F1_response.png
+  saved figure F2_arms.png
+  saved figure F3_forest.png
+  saved figure F4_rewiring.png
+  saved figure F7_paired_deltas.png
+  saved figure F9_extensions.png
+  wrote T1_main_results.csv / .md
+  copied F5, F6, F8
+### 2026-11-25 16:46:09  10_report_figures.py
+  saved figure F1_response.png
+  saved figure F2_arms.png
+  saved figure F3_forest.png
+  saved figure F4_rewiring.png
+  saved figure F7_paired_deltas.png
+  saved figure F9_extensions.png
+  wrote T1_main_results.csv / .md
+  copied F5, F6, F8

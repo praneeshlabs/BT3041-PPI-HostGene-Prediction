@@ -1,0 +1,33 @@
+set,Gene_set,Term,P-value,Adjusted P-value
+E+N:top100,GO_Biological_Process_2021,SRP-dependent cotranslational protein targeting to membrane (GO:0006614),2.1031893549429218e-113,1.8823544726739148e-110
+E+N:top100,Reactome_2022,Eukaryotic Translation Elongation R-HSA-156842,3.36096235830981e-112,1.3981603410568809e-109
+E+N:top100,Reactome_2022,Peptide Chain Elongation R-HSA-156902,1.2758161687069062e-111,2.653697630910365e-109
+E+N:top100,GO_Biological_Process_2021,cotranslational protein targeting to membrane (GO:0006613),7.218440380472426e-112,3.230252070261411e-109
+E+N:top100,GO_Biological_Process_2021,cytoplasmic translation (GO:0002181),4.028049515371945e-109,1.2017014387526302e-106
+E+N:top100,GO_Biological_Process_2021,protein targeting to ER (GO:0045047),3.3559417390478124e-108,7.50891964111948e-106
+E+N:top100,GO_Biological_Process_2021,"nuclear-transcribed mRNA catabolic process, nonsense-mediated decay (GO:0000184)",7.636721998327622e-107,1.3669732377006444e-104
+E+N:top100,Reactome_2022,Nonsense Mediated Decay (NMD) Independent Of Exon Junction Complex (EJC) R-HSA-975956,1.3104845679919403e-105,1.8172052676154904e-103
+E+N:top100_filtered,GO_Biological_Process_2021,canonical glycolysis (GO:0061621),4.96522235072366e-07,0.000154679722416929
+E+N:top100_filtered,GO_Biological_Process_2021,glucose catabolic process to pyruvate (GO:0061718),4.96522235072366e-07,0.000154679722416929
+E+N:top100_filtered,GO_Biological_Process_2021,glycolytic process (GO:0006096),6.688852861272605e-07,0.000154679722416929
+E+N:top100_filtered,GO_Biological_Process_2021,glycolytic process through glucose-6-phosphate (GO:0061620),6.688852861272605e-07,0.000154679722416929
+E+N:top100_filtered,GO_Biological_Process_2021,pyruvate metabolic process (GO:0006090),1.6803320546536336e-06,0.0003108614301109222
+E+N:top100_filtered,GO_Biological_Process_2021,carbohydrate catabolic process (GO:0016052),5.2894893171802436e-06,0.0008154629363986208
+E+N:top100_filtered,Reactome_2022,Keratinization R-HSA-6805567,3.919548394549613e-06,0.0013012900669904714
+E+N:top100_filtered,GO_Biological_Process_2021,actin-myosin filament sliding (GO:0033275),1.1895585618206487e-05,0.001375427087105125
+GBA:top100,Reactome_2022,Aggrephagy R-HSA-9646399,9.909780159141873e-14,8.244937092406038e-11
+GBA:top100,Reactome_2022,Regulation Of PLK1 Activity At G2/M Transition R-HSA-2565942,7.708021058546174e-13,3.2065367603552084e-10
+GBA:top100,Reactome_2022,InlA-mediated Entry Of Listeria Monocytogenes Into Host Cells R-HSA-8876493,1.5597505117224796e-11,4.325708085843676e-09
+GBA:top100,Reactome_2022,Selective Autophagy R-HSA-9663891,5.3628197869297696e-11,1.052667448021908e-08
+GBA:top100,Reactome_2022,Mitotic G2-G2/M Phases R-HSA-453274,7.591351788619529e-11,1.052667448021908e-08
+GBA:top100,Reactome_2022,G2/M Transition R-HSA-69275,6.4523847840752e-11,1.052667448021908e-08
+GBA:top100,Reactome_2022,Role Of GTSE1 In G2/M Progression After G2 Checkpoint R-HSA-8852276,1.9529478766974413e-09,2.321218047731816e-07
+GBA:top100,Reactome_2022,Spry Regulation Of FGF Signaling R-HSA-1295596,4.200117417187751e-09,4.368122113875261e-07
+GBA:top100_filtered,Reactome_2022,Metabolism R-HSA-1430728,2.5680336477292466e-11,6.805289166482503e-09
+GBA:top100_filtered,Reactome_2022,Metabolism Of Water-Soluble Vitamins And Cofactors R-HSA-196849,9.651007293364347e-10,1.278758466370776e-07
+GBA:top100_filtered,Reactome_2022,Vitamin B5 (Pantothenate) Metabolism R-HSA-199220,2.6449238031539003e-09,2.3150831980804005e-07
+GBA:top100_filtered,Reactome_2022,Coenzyme A Biosynthesis R-HSA-196783,3.494465204649661e-09,2.3150831980804005e-07
+GBA:top100_filtered,Reactome_2022,Metabolism Of Vitamins And Cofactors R-HSA-196854,5.738549566818926e-08,2.534526058678359e-06
+GBA:top100_filtered,Reactome_2022,Chondroitin Sulfate/Dermatan Sulfate Metabolism R-HSA-1793185,4.944371067943061e-08,2.534526058678359e-06
+GBA:top100_filtered,GO_Biological_Process_2021,ribonucleoside bisphosphate biosynthetic process (GO:0034030),2.8196517893925468e-08,1.0094353406025317e-05
+GBA:top100_filtered,GO_Biological_Process_2021,purine nucleoside bisphosphate biosynthetic process (GO:0034033),2.8196517893925468e-08,1.0094353406025317e-05

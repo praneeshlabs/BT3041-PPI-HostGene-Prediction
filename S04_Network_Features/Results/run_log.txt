@@ -1,0 +1,61 @@
+### 2026-11-25 15:58:28  03_network.py --ppi string_v11
+### 2026-11-25 16:00:27  03_network.py --ppi huri
+Building network: huri
+  raw network: 8194 genes, 51640 edges
+  expressed: 12440 | expressed & in network: 5601 | largest component: 5077 genes, 22642 edges
+Computing topology features (betweenness/closeness can take a few minutes) ...
+  saved features_huri.csv (5077 genes x 35 columns)
+  arm E   : 4 features -> ['lfc', 'abs_lfc', 'nlp', 'logbm']
+  arm N   : 6 features -> ['log_degree', 'log_betweenness', 'closeness', 'pagerank', 'coreness', 'clustering']
+  arm E+N : 11 features -> ['lfc', 'abs_lfc', 'nlp', 'logbm', 'log_degree', 'log_betweenness', 'closeness', 'pagerank', 'coreness', 'clustering', 'prop']
+  publication counts: 0 genes with 0 papers (imputed as 0, not NaN)
+  saved figure 08_feature_correlation_huri.png
+  saved figure 06_degree_distribution_huri.png
+  labels 'crispr': 269 listed, 269 mapped to official symbols
+2026-11-25 16:00:54,095 [WARNING] Duplicated values found in preranked stats: 2.62% of genes
+The order of those genes will be arbitrary, which may produce unexpected results.
+2026-11-25 16:00:54,465 [WARNING] Duplicated values found in preranked stats: 2.32% of genes
+The order of those genes will be arbitrary, which may produce unexpected results.
+  labels 'crispr_min2': 30 listed, 30 mapped to official symbols
+2026-11-25 16:00:55,524 [WARNING] Duplicated values found in preranked stats: 2.62% of genes
+The order of those genes will be arbitrary, which may produce unexpected results.
+2026-11-25 16:00:55,898 [WARNING] Duplicated values found in preranked stats: 2.32% of genes
+The order of those genes will be arbitrary, which may produce unexpected results.
+  labels 'gordon': 332 listed, 332 mapped to official symbols
+2026-11-25 16:00:56,852 [WARNING] Duplicated values found in preranked stats: 2.62% of genes
+The order of those genes will be arbitrary, which may produce unexpected results.
+2026-11-25 16:00:57,225 [WARNING] Duplicated values found in preranked stats: 2.32% of genes
+The order of those genes will be arbitrary, which may produce unexpected results.
+  saved figure 07_label_bias_huri.png
+  saved figure 09_single_feature_auroc_huri.png
+     labels  ppi  mapped  expressed  in_network  in_universe
+     crispr huri     269        213         109           81
+crispr_min2 huri      30         28          13            9
+     gordon huri     332        314         152          127
+     labels                          test            p      N     K     n    k  expected  odds_ratio  p_depletion       NES p_note
+     crispr degree pos vs unlabeled (MWU) 9.737234e-01    NaN   NaN   NaN  NaN       NaN         NaN          NaN       NaN    NaN
+     crispr   pubs pos vs unlabeled (MWU) 1.297828e-02    NaN   NaN   NaN  NaN       NaN         NaN          NaN       NaN    NaN
+     crispr           DE enrichment Calu3 8.238022e-01 5077.0  81.0 644.0  8.0      10.3    0.751271     0.284345       NaN    NaN
+     crispr            GSEA prerank Calu3 3.246753e-03    NaN   NaN   NaN  NaN       NaN         NaN          NaN -1.589552       
+     crispr       DE enrichment A549-ACE2 8.068244e-01 5077.0  81.0 771.0 10.0      12.3    0.783809     0.295640       NaN    NaN
+     crispr        GSEA prerank A549-ACE2 6.730769e-02    NaN   NaN   NaN  NaN       NaN         NaN          NaN -1.315565       
+     crispr            DE enrichment NHBE 1.000000e+00 5077.0  81.0  29.0  0.0       0.5    0.000000     0.626437       NaN    NaN
+     crispr             GSEA prerank NHBE 8.366667e-01    NaN   NaN   NaN  NaN       NaN         NaN          NaN -0.822962       
+crispr_min2 degree pos vs unlabeled (MWU) 6.189334e-01    NaN   NaN   NaN  NaN       NaN         NaN          NaN       NaN    NaN
+crispr_min2   pubs pos vs unlabeled (MWU) 1.028143e-01    NaN   NaN   NaN  NaN       NaN         NaN          NaN       NaN    NaN
+crispr_min2           DE enrichment Calu3 1.000000e+00 5077.0   9.0 644.0  0.0       1.1    0.000000     0.294691       NaN    NaN
+crispr_min2            GSEA prerank Calu3 1.153040e-01    NaN   NaN   NaN  NaN       NaN         NaN          NaN -1.398044       
+crispr_min2       DE enrichment A549-ACE2 1.000000e+00 5077.0   9.0 771.0  0.0       1.4    0.000000     0.226803       NaN    NaN
+crispr_min2        GSEA prerank A549-ACE2 1.385681e-02    NaN   NaN   NaN  NaN       NaN         NaN          NaN -1.632348       
+crispr_min2            DE enrichment NHBE 1.000000e+00 5077.0   9.0  29.0  0.0       0.1    0.000000     0.949712       NaN    NaN
+crispr_min2             GSEA prerank NHBE 8.795455e-01    NaN   NaN   NaN  NaN       NaN         NaN          NaN -0.690542       
+     gordon degree pos vs unlabeled (MWU) 1.185608e-01    NaN   NaN   NaN  NaN       NaN         NaN          NaN       NaN    NaN
+     gordon   pubs pos vs unlabeled (MWU) 3.036433e-07    NaN   NaN   NaN  NaN       NaN         NaN          NaN       NaN    NaN
+     gordon           DE enrichment Calu3 9.695659e-01 5077.0 127.0 644.0 10.0      16.1    0.581844     0.058602       NaN    NaN
+     gordon            GSEA prerank Calu3 6.746032e-02    NaN   NaN   NaN  NaN       NaN         NaN          NaN -1.271438       
+     gordon       DE enrichment A549-ACE2 8.279414e-01 5077.0 127.0 771.0 16.0      19.3    0.800907     0.247241       NaN    NaN
+     gordon        GSEA prerank A549-ACE2 3.676471e-03    NaN   NaN   NaN  NaN       NaN         NaN          NaN -1.631009       
+     gordon            DE enrichment NHBE 1.000000e+00 5077.0 127.0  29.0  0.0       0.7    0.000000     0.478684       NaN    NaN
+     gordon             GSEA prerank NHBE 5.614754e-01    NaN   NaN   NaN  NaN       NaN         NaN          NaN -0.961787       
+### 2026-11-25 16:01:00  03c_shared_huri.py 
+shared STRING v11 / HuRI genes: 4577

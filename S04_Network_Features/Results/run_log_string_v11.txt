@@ -1,0 +1,57 @@
+2026-11-25 06:05:42,305 [WARNING] Duplicated values found in preranked stats: 2.72% of genes
+The order of those genes will be arbitrary, which may produce unexpected results.
+2026-11-25 06:05:43,550 [WARNING] Duplicated values found in preranked stats: 3.20% of genes
+The order of those genes will be arbitrary, which may produce unexpected results.
+2026-11-25 06:05:45,848 [WARNING] Duplicated values found in preranked stats: 2.72% of genes
+The order of those genes will be arbitrary, which may produce unexpected results.
+2026-11-25 06:05:46,772 [WARNING] Duplicated values found in preranked stats: 3.20% of genes
+The order of those genes will be arbitrary, which may produce unexpected results.
+2026-11-25 06:05:49,009 [WARNING] Duplicated values found in preranked stats: 2.72% of genes
+The order of those genes will be arbitrary, which may produce unexpected results.
+2026-11-25 06:05:49,843 [WARNING] Duplicated values found in preranked stats: 3.20% of genes
+The order of those genes will be arbitrary, which may produce unexpected results.
+Building network: string_v11
+  raw network: 16899 genes, 414835 edges
+  expressed: 12440 | expressed & in network: 11089 | largest component: 10722 genes, 260518 edges
+Computing topology features (betweenness/closeness can take a few minutes) ...
+  saved features_string_v11.csv (10722 genes x 35 columns)
+  arm E   : 4 features -> ['lfc', 'abs_lfc', 'nlp', 'logbm']
+  arm N   : 6 features -> ['log_degree', 'log_betweenness', 'closeness', 'pagerank', 'coreness', 'clustering']
+  arm E+N : 11 features -> ['lfc', 'abs_lfc', 'nlp', 'logbm', 'log_degree', 'log_betweenness', 'closeness', 'pagerank', 'coreness', 'clustering', 'prop']
+  publication counts: 0 genes with 0 papers (imputed as 0, not NaN)
+  saved figure 08_feature_correlation_string_v11.png
+  saved figure 06_degree_distribution_string_v11.png
+  labels 'crispr': 269 listed, 269 mapped to official symbols
+  labels 'crispr_min2': 30 listed, 30 mapped to official symbols
+  labels 'gordon': 332 listed, 332 mapped to official symbols
+  saved figure 07_label_bias_string_v11.png
+  saved figure 09_single_feature_auroc_string_v11.png
+     labels        ppi  mapped  expressed  in_network  in_universe
+     crispr string_v11     269        213         249          201
+crispr_min2 string_v11      30         28          29           27
+     gordon string_v11     332        314         320          300
+     labels                          test            p       N     K      n    k  expected  odds_ratio  p_depletion       NES                             p_note
+     crispr degree pos vs unlabeled (MWU) 1.127855e-02     NaN   NaN    NaN  NaN       NaN         NaN          NaN       NaN                                NaN
+     crispr   pubs pos vs unlabeled (MWU) 4.113436e-02     NaN   NaN    NaN  NaN       NaN         NaN          NaN       NaN                                NaN
+     crispr           DE enrichment Calu3 9.519937e-01 10722.0 201.0 1394.0 19.0      26.1    0.694402     0.075882       NaN                                NaN
+     crispr            GSEA prerank Calu3 9.815951e-02     NaN   NaN    NaN  NaN       NaN         NaN          NaN -1.179942                                   
+     crispr       DE enrichment A549-ACE2 9.798906e-01 10722.0 201.0 1561.0 20.0      29.3    0.643910     0.033799       NaN                                NaN
+     crispr        GSEA prerank A549-ACE2 9.634551e-02     NaN   NaN    NaN  NaN       NaN         NaN          NaN -1.170033                                   
+     crispr            DE enrichment NHBE 1.000000e+00 10722.0 201.0   62.0  0.0       1.2    0.000000     0.308295       NaN                                NaN
+     crispr             GSEA prerank NHBE 9.828571e-01     NaN   NaN    NaN  NaN       NaN         NaN          NaN -0.784775                                   
+crispr_min2 degree pos vs unlabeled (MWU) 1.025311e-02     NaN   NaN    NaN  NaN       NaN         NaN          NaN       NaN                                NaN
+crispr_min2   pubs pos vs unlabeled (MWU) 1.731032e-01     NaN   NaN    NaN  NaN       NaN         NaN          NaN       NaN                                NaN
+crispr_min2           DE enrichment Calu3 9.768412e-01 10722.0  27.0 1394.0  1.0       3.5    0.256834     0.116864       NaN                                NaN
+crispr_min2            GSEA prerank Calu3 1.932115e-01     NaN   NaN    NaN  NaN       NaN         NaN          NaN -1.225928                                   
+crispr_min2       DE enrichment A549-ACE2 9.202298e-01 10722.0  27.0 1561.0  2.0       3.9    0.468813     0.225301       NaN                                NaN
+crispr_min2        GSEA prerank A549-ACE2 6.278027e-02     NaN   NaN    NaN  NaN       NaN         NaN          NaN -1.426613                                   
+crispr_min2            DE enrichment NHBE 1.000000e+00 10722.0  27.0   62.0  0.0       0.2    0.000000     0.854899       NaN                                NaN
+crispr_min2             GSEA prerank NHBE 9.884298e-01     NaN   NaN    NaN  NaN       NaN         NaN          NaN  0.520469                                   
+     gordon degree pos vs unlabeled (MWU) 2.103514e-07     NaN   NaN    NaN  NaN       NaN         NaN          NaN       NaN                                NaN
+     gordon   pubs pos vs unlabeled (MWU) 9.035371e-13     NaN   NaN    NaN  NaN       NaN         NaN          NaN       NaN                                NaN
+     gordon           DE enrichment Calu3 9.999503e-01 10722.0 300.0 1394.0 19.0      39.0    0.444886     0.000117       NaN                                NaN
+     gordon            GSEA prerank Calu3 9.990010e-04     NaN   NaN    NaN  NaN       NaN         NaN          NaN -1.368234 p<0.001 (permutation floor 1/1001)
+     gordon       DE enrichment A549-ACE2 7.529266e-01 10722.0 300.0 1561.0 40.0      43.7    0.900319     0.303688       NaN                                NaN
+     gordon        GSEA prerank A549-ACE2 9.990010e-04     NaN   NaN    NaN  NaN       NaN         NaN          NaN -1.777568 p<0.001 (permutation floor 1/1001)
+     gordon            DE enrichment NHBE 8.287411e-01 10722.0 300.0   62.0  1.0       1.7    0.568068     0.478702       NaN                                NaN
+     gordon             GSEA prerank NHBE 7.275943e-01     NaN   NaN    NaN  NaN       NaN         NaN          NaN  0.894101                                   

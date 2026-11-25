@@ -1,0 +1,142 @@
+C:\Users\HP\Desktop\Acads\Sem 7\BT3041 - AIBD\Project\Claude\.venv\Lib\site-packages\pandas\core\arraylike.py:438: RuntimeWarning: divide by zero encountered in log10
+  result = getattr(ufunc, method)(*inputs, **kwargs)
+C:\Users\HP\Desktop\Acads\Sem 7\BT3041 - AIBD\Project\Claude\02_de.py:132: RuntimeWarning: divide by zero encountered in log10
+  ax.annotate(g, (r.log2FoldChange[g], -np.log10(r.padj[g])), fontsize=6)
+Loading counts ...
+  21797 rows -> 21518 official gene symbols
+
+Samples used (CHECK THIS against the GEO page):
+cell_cfg   series    condition
+A549-ACE2  Series16  mock         3
+                     sars2        3
+           Series6   mock         3
+                     sars2        3
+Calu3      Series7   mock         3
+                     sars2        3
+NHBE       Series1   mock         3
+                     sars2        3 
+
+DESeq2: NHBE (6 samples, 14015 genes)
+  89 DE genes (padj<0.05, |LFC|>1.0)
+DESeq2: A549-ACE2 (12 samples, 14658 genes)
+  2440 DE genes (padj<0.05, |LFC|>1.0)
+DESeq2: Calu3 (6 samples, 14358 genes)
+  1738 DE genes (padj<0.05, |LFC|>1.0)
+  saved figure 01_library_sizes.png
+  saved figure 02_pca.png
+  saved figure 03_volcano.png
+  saved figure 04_heatmap_top_de.png
+  (UpSet plot skipped: Invalid RGBA argument: nan); writing pairwise Jaccard instead
+  saved figure 05_de_overlap_jaccard.png
+exit=0
+### 2026-11-25 15:57:44  02_de.py 
+Loading counts ...
+  21797 rows -> 21518 official gene symbols
+
+Samples used (CHECK THIS against the GEO page):
+cell_cfg   series    condition
+A549-ACE2  Series16  mock         3
+                     sars2        3
+           Series6   mock         3
+                     sars2        3
+Calu3      Series7   mock         3
+                     sars2        3
+NHBE       Series1   mock         3
+                     sars2        3 
+
+DESeq2: NHBE (6 samples, 14015 genes)
+ERROR: The process "3980" not found.
+joblib.externals.loky.process_executor._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "C:\Users\HP\Desktop\Acads\Sem 7\BT3041 - AIBD\Project\Final_Project\python_env\Lib\site-packages\joblib\externals\loky\process_executor.py", line 453, in _process_worker
+    call_item = call_queue.get(block=True, timeout=timeout)
+  File "C:\Users\HP\miniconda3\Lib\multiprocessing\queues.py", line 116, in get
+    self._sem.release()
+    ~~~~~~~~~~~~~~~~~^^
+OSError: [WinError 6] The handle is invalid
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\HP\Desktop\Acads\Sem 7\BT3041 - AIBD\Project\Final_Project\S03_Differential_Expression\02_de.py", line 212, in <module>
+    main()
+    ~~~~^^
+  File "C:\Users\HP\Desktop\Acads\Sem 7\BT3041 - AIBD\Project\Final_Project\S03_Differential_Expression\02_de.py", line 203, in main
+    res = run_deseq(X, m)
+  File "C:\Users\HP\Desktop\Acads\Sem 7\BT3041 - AIBD\Project\Final_Project\S03_Differential_Expression\02_de.py", line 70, in run_deseq
+    dds.deseq2()
+    ~~~~~~~~~~^^
+  File "C:\Users\HP\Desktop\Acads\Sem 7\BT3041 - AIBD\Project\Final_Project\python_env\Lib\site-packages\pydeseq2\dds.py", line 463, in deseq2
+    self.fit_genewise_dispersions()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\HP\Desktop\Acads\Sem 7\BT3041 - AIBD\Project\Final_Project\python_env\Lib\site-packages\pydeseq2\dds.py", line 667, in fit_genewise_dispersions
+    mu_hat_ = self.inference.lin_reg_mu(
+        counts=self.X[:, self.non_zero_idx],
+    ...<2 lines>...
+        min_mu=self.min_mu,
+    )
+  File "C:\Users\HP\Desktop\Acads\Sem 7\BT3041 - AIBD\Project\Final_Project\python_env\Lib\site-packages\pydeseq2\default_inference.py", line 74, in lin_reg_mu
+    Parallel(
+    ~~~~~~~~~
+    ...<2 lines>...
+        batch_size=self._batch_size,
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    )(
+    ~^
+        delayed(fit_lin_mu)(
+        ^^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+        for i in range(counts.shape[1])
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\HP\Desktop\Acads\Sem 7\BT3041 - AIBD\Project\Final_Project\python_env\Lib\site-packages\joblib\parallel.py", line 2098, in __call__
+    return output if self.return_generator else list(output)
+                                                ~~~~^^^^^^^^
+  File "C:\Users\HP\Desktop\Acads\Sem 7\BT3041 - AIBD\Project\Final_Project\python_env\Lib\site-packages\joblib\parallel.py", line 1704, in _get_outputs
+    yield from self._retrieve()
+  File "C:\Users\HP\Desktop\Acads\Sem 7\BT3041 - AIBD\Project\Final_Project\python_env\Lib\site-packages\joblib\parallel.py", line 1806, in _retrieve
+    self._raise_error_fast()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\HP\Desktop\Acads\Sem 7\BT3041 - AIBD\Project\Final_Project\python_env\Lib\site-packages\joblib\parallel.py", line 1885, in _raise_error_fast
+    error_job.get_result(self.timeout)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\HP\Desktop\Acads\Sem 7\BT3041 - AIBD\Project\Final_Project\python_env\Lib\site-packages\joblib\parallel.py", line 780, in get_result
+    return self._return_or_raise()
+           ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\HP\Desktop\Acads\Sem 7\BT3041 - AIBD\Project\Final_Project\python_env\Lib\site-packages\joblib\parallel.py", line 795, in _return_or_raise
+    raise self._result
+joblib.externals.loky.process_executor.BrokenProcessPool: A task has failed to un-serialize. Please ensure that the arguments of the function are all picklable.
+### 2026-11-25 16:44:43  02_de.py  (re-run on its own with stdin redirected)
+C:\Users\HP\Desktop\Acads\Sem 7\BT3041 - AIBD\Project\Final_Project\python_env\Lib\site-packages\pandas\core\arraylike.py:438: RuntimeWarning: divide by zero encountered in log10
+  result = getattr(ufunc, method)(*inputs, **kwargs)
+C:\Users\HP\Desktop\Acads\Sem 7\BT3041 - AIBD\Project\Final_Project\S03_Differential_Expression\02_de.py:135: RuntimeWarning: divide by zero encountered in log10
+  ax.annotate(g, (r.log2FoldChange[g], -np.log10(r.padj[g])), fontsize=6)
+Loading counts ...
+  21797 rows -> 21518 official gene symbols
+
+Samples used (CHECK THIS against the GEO page):
+cell_cfg   series    condition
+A549-ACE2  Series16  mock         3
+                     sars2        3
+           Series6   mock         3
+                     sars2        3
+Calu3      Series7   mock         3
+                     sars2        3
+NHBE       Series1   mock         3
+                     sars2        3 
+
+DESeq2: NHBE (6 samples, 14015 genes)
+  89 DE genes (padj<0.05, |LFC|>1.0)
+DESeq2: A549-ACE2 (12 samples, 14658 genes)
+  2440 DE genes (padj<0.05, |LFC|>1.0)
+DESeq2: Calu3 (6 samples, 14358 genes)
+  1738 DE genes (padj<0.05, |LFC|>1.0)
+  saved figure 01_library_sizes.png
+  saved figure 02_pca.png
+  saved figure 03_volcano.png
+  saved figure 04_heatmap_top_de.png
+  (UpSet plot skipped: Invalid RGBA argument: nan); writing pairwise Jaccard instead
+  saved figure 05_de_overlap_jaccard.png
